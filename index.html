@@ -4,69 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Mi Página Web</title>
+    <title>Mi Página Profesional</title>
 </head>
 <body>
 
 <header>
-    <h1>Nombre de la Página</h1>
+    <h1>Nombre de la Empresa</h1>
     <nav>
         <ul>
             <li><a href="#home">Inicio</a></li>
             <li><a href="#about">Acerca de</a></li>
             <li><a href="#services">Servicios</a></li>
+            <li><a href="#testimonials">Testimonios</a></li>
             <li><a href="#contact">Contacto</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
-    <!-- Contenido principal aquí -->
+    <section id="home">
+        <h2>Bienvenido a Nuestra Empresa</h2>
+        <p>Ofrecemos soluciones innovadoras para tus necesidades empresariales.</p>
+    </section>
+
+    <section id="about">
+        <h2>Acerca de Nosotros</h2>
+        <p>Somos una empresa dedicada a proporcionar servicios de alta calidad en diversas áreas. Nuestro equipo está formado por profesionales altamente capacitados.</p>
+    </section>
+
+    <section id="services">
+        <h2>Nuestros Servicios</h2>
+        <ul>
+            <li>Consultoría Empresarial</li>
+            <li>Desarrollo de Software</li>
+            <li>Marketing Digital</li>
+            <li>Soporte Técnico</li>
+        </ul>
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonios</h2>
+        <blockquote>
+            "El servicio fue excepcional y superó nuestras expectativas." - Cliente Satisfecho
+        </blockquote>
+        <blockquote>
+            "Recomiendo encarecidamente a esta empresa por su profesionalismo." - Otro Cliente
+        </blockquote>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form action="#" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 </main>
 
-</body>
-</html>
+<footer>
+    <p>&copy; 2023 Nombre de la Empresa. Todos los derechos reservados.</p>
+</footer>
 
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PS4 ROMS PARADISE</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Enlazamos el archivo CSS -->
-</head>
-<body>
-    <header>
-        <h1>Bienvenido PS4 ROMS PARADISE</h1>
-        <p>Aquí puedes subir y ver juegos.</p>
-    </header>
-
-    <main>
-        <section id="upload-section">
-            <h2>Sube un Nuevo Juego</h2>
-            <form id="upload-form" enctype="multipart/form-data">
-                <label for="game-title">Título del Juego:</label>
-                <input type="text" id="game-title" name="game-title" required>
-
-                <label for="game-file">Archivo del Juego:</label>
-                <input type="file" id="game-file" name="game-file" accept=".zip,.exe,.html" required>
-
-                <button type="submit">Subir Juego</button>
-            </form>
-        </section>
-
-        <section id="games-section">
-            <h2>Juegos Disponibles</h2>
-            <ul id="games-list">
-                <!-- Aquí se mostrarán los juegos subidos -->
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; @Copyright Team Paradise </p>
-    </footer>
-
-    <script src="script.js"></script> <!-- Enlazamos el archivo JavaScript -->
 </body>
 </html>
 
