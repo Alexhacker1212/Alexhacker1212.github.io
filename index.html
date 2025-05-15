@@ -1,7 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sube tus Juegos</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlazamos el archivo CSS -->
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <h1>Bienvenido a la Página de Juegos</h1>
+        <p>Aquí puedes subir y ver juegos.</p>
+    </header>
+
+    <main>
+        <section id="upload-section">
+            <h2>Sube un Nuevo Juego</h2>
+            <form id="upload-form" enctype="multipart/form-data">
+                <label for="game-title">Título del Juego:</label>
+                <input type="text" id="game-title" name="game-title" required>
+
+                <label for="game-file">Archivo del Juego:</label>
+                <input type="file" id="game-file" name="game-file" accept=".zip,.exe,.html" required>
+
+                <button type="submit">Subir Juego</button>
+            </form>
+        </section>
+
+        <section id="games-section">
+            <h2>Juegos Disponibles</h2>
+            <ul id="games-list">
+                <!-- Aquí se mostrarán los juegos subidos -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Mi Página de Juegos</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Enlazamos el archivo JavaScript -->
 </body>
 </html>
